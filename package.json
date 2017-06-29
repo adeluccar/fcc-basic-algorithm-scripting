@@ -1,0 +1,28 @@
+{
+  "name": "basic-algorithm-scripting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "02-reverse-a-string.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adeluccar/fcc-basic-algorithm-scripting.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adeluccar/fcc-basic-algorithm-scripting/issues"
+  },
+  "homepage": "https://github.com/adeluccar/fcc-basic-algorithm-scripting#readme",
+  "devDependencies": {
+    "eslint": "^4.1.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.6.0",
+    "eslint-plugin-node": "^5.1.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1"
+  }
+}
