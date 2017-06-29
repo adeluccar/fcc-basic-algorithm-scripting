@@ -1,18 +1,18 @@
 // https://www.freecodecamp.com/challenges/chunky-monkey
 
-function chunkArrayInGroups(arr, size) {
-  var finalArray = [];
+function chunkArrayInGroups (arr, size) {
+  var finalArray = []
 
-  while(arr.length > 0) {
-    var sliceArray = arr.slice(0, size);
-    finalArray.push(sliceArray);
+  while (arr.length > 0) {
+    var sliceArray = arr.slice(0, size)
+    finalArray.push(sliceArray)
 
     for (var i = 0; i < size; i++) {
-      arr.shift();
+      arr.shift()
     }
   }
 
-  return finalArray;
+  return finalArray
 }
 
-chunkArrayInGroups(["a", "b", "c", "d"], 3);
+chunkArrayInGroups(['a', 'b', 'c', 'd'], 3)
