@@ -3,112 +3,113 @@
 // ABCDEFGHIJKLMNOPQRSTUVWXYZ
 // NOPQRSTUVWXYZABCDEFGHIJKLM
 
-function rot13 (str) { // LBH QVQ VG!
-  var arr = str.split(' ')
-  var decodedWords = []
+function rot13(str) { // LBH QVQ VG!
+  const arr = str.split(' ');
+  const decodedWords = [];
 
-  arr.forEach(function (element) {
-    var encodedWordArray = element.split('')
-    var decodedWordArray = []
+  arr.forEach((element) => {
+    const encodedWordArray = element.split('');
+    const decodedWordArray = [];
 
-    encodedWordArray.forEach(function (encodedWordChar) {
+    encodedWordArray.forEach((encodedWordChar) => {
       switch (encodedWordChar) {
         case 'A':
-          decodedWordArray.push('N')
-          break
+          decodedWordArray.push('N');
+          break;
         case 'B':
-          decodedWordArray.push('O')
-          break
+          decodedWordArray.push('O');
+          break;
         case 'C':
-          decodedWordArray.push('P')
-          break
+          decodedWordArray.push('P');
+          break;
         case 'D':
-          decodedWordArray.push('Q')
-          break
+          decodedWordArray.push('Q');
+          break;
         case 'E':
-          decodedWordArray.push('R')
-          break
+          decodedWordArray.push('R');
+          break;
         case 'F':
-          decodedWordArray.push('S')
-          break
+          decodedWordArray.push('S');
+          break;
         case 'G':
-          decodedWordArray.push('T')
-          break
+          decodedWordArray.push('T');
+          break;
         case 'H':
-          decodedWordArray.push('U')
-          break
+          decodedWordArray.push('U');
+          break;
         case 'I':
-          decodedWordArray.push('V')
-          break
+          decodedWordArray.push('V');
+          break;
         case 'J':
-          decodedWordArray.push('W')
-          break
+          decodedWordArray.push('W');
+          break;
         case 'K':
-          decodedWordArray.push('X')
-          break
+          decodedWordArray.push('X');
+          break;
         case 'L':
-          decodedWordArray.push('Y')
-          break
+          decodedWordArray.push('Y');
+          break;
         case 'M':
-          decodedWordArray.push('Z')
-          break
+          decodedWordArray.push('Z');
+          break;
         case 'N':
-          decodedWordArray.push('A')
-          break
+          decodedWordArray.push('A');
+          break;
         case 'O':
-          decodedWordArray.push('B')
-          break
+          decodedWordArray.push('B');
+          break;
         case 'P':
-          decodedWordArray.push('C')
-          break
+          decodedWordArray.push('C');
+          break;
         case 'Q':
-          decodedWordArray.push('D')
-          break
+          decodedWordArray.push('D');
+          break;
         case 'R':
-          decodedWordArray.push('E')
-          break
+          decodedWordArray.push('E');
+          break;
         case 'S':
-          decodedWordArray.push('F')
-          break
+          decodedWordArray.push('F');
+          break;
         case 'T':
-          decodedWordArray.push('G')
-          break
+          decodedWordArray.push('G');
+          break;
         case 'U':
-          decodedWordArray.push('H')
-          break
+          decodedWordArray.push('H');
+          break;
         case 'V':
-          decodedWordArray.push('I')
-          break
+          decodedWordArray.push('I');
+          break;
         case 'W':
-          decodedWordArray.push('J')
-          break
+          decodedWordArray.push('J');
+          break;
         case 'X':
-          decodedWordArray.push('K')
-          break
+          decodedWordArray.push('K');
+          break;
         case 'Y':
-          decodedWordArray.push('L')
-          break
+          decodedWordArray.push('L');
+          break;
         case 'Z':
-          decodedWordArray.push('M')
-          break
+          decodedWordArray.push('M');
+          break;
         case '!':
-          decodedWordArray.push('!')
-          break
+          decodedWordArray.push('!');
+          break;
         case '?':
-          decodedWordArray.push('?')
-          break
+          decodedWordArray.push('?');
+          break;
         case '.':
-          decodedWordArray.push('.')
-          break
+          decodedWordArray.push('.');
+          break;
+        default:
       }
-    })
+    });
 
-    var decodedWordString = decodedWordArray.join('')
-    decodedWords.push(decodedWordString)
-  })
+    const decodedWordString = decodedWordArray.join('');
+    decodedWords.push(decodedWordString);
+  });
 
-  str = decodedWords.join(' ')
-  return str
+  const finalString = decodedWords.join(' ');
+  return finalString;
 }
 
-rot13('SERR PBQR PNZC')
+rot13('SERR PBQR PNZC');
